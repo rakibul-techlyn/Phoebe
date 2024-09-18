@@ -630,6 +630,10 @@ p {
   .text_With_img_section .content h2{
     font-size: 43px;
   }
+
+  .text_With_img_section .imgbox{
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 650px) {

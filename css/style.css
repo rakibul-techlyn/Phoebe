@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Lusitana:wght@400;700&family=Sen:wght@400..800&display=swap");
+
+* {
+  cursor: default;
+  list-style: none;
+  text-decoration: none;
+  --heading-font: "Lusitana", system-ui;
+  --p-font: "Sen", system-ui;
+  --hero-bg:#76431E;
+
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+  color: #000;
+  position: static;
+  scroll-behavior: smooth;
+  font-family: "Sen", system-ui;
+  overflow-x: hidden;
+}
+select,
+input,
+button:focus {
+  outline: none;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.image-with-text__text.rte ul {
+  list-style: disc;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a,
+a * {
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.imgbox_full,
+.imgbox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.imgbox_full img,
+.imgbox img {
+  width: 100%;
+  height: auto;
+}
+.imgbox_full {
+  height: 100%;
+}
+.imgbox_full img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.container {
+  max-width: 1456px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+/* common font name  */
+.heading-font {
+  font-family: "Lusitana", system-ui;
+}
+.p-font {
+  font-family: "Sen", system-ui;
+}
+/* common font name  */
+
+/* hero section start  */
+
+/* main button style  */
+/* From Uiverse.io by gharsh11032000 */
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 23px 35px;
+  font-size: 20px;
+  border: none;
+  background-color: #69d1d1;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: black;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #69d1d1;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  color: #212121;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+/* main button style  */
+
+.hero_section {
+  background-image: url(/image/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-first-content {
+  color: white;
+}
+
+.hero-first-content .first-content {
+  margin-bottom: 24px;
+}
+
+.hero-first-content .second-content {
+  width: 100%;
+}
+
+.hero-first-content .second-content h1 {
+  font-family: var(--heading-font);
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+.hero-first-content .second-content p {
+  font-size: 20px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.hero-card {
+  background: white;
+  width: 100%;
+  max-width: 435px;
+  margin-left: auto;
+}
+
+.hero-card-body {
+  display: flex;
+}
+
+.hero-content {
+  height: 100vh;
+  padding: 60px 0;
+}
+
+.hero-first-content {
+  align-self: center;
+}
+
+.hero-content .card_wrapper{
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.hero-card-body .card-content {
+  padding: 19.5px 22px;
+}
+
+.hero-card-body .card-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-card-body .card-content h4 {
+  font-size: 18px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.hero-card-body .card-content p {
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-bottom: 5px;
+}
+
+.hero-card-body .card-content .card-icon h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hero-card-body .card-content .card-icon .image-box {
+  width: 12px;
+}
+
+.hero-card-body .card-content .card-icon p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.hero_section .hero-content  .card_img_wrapper{
+  width: 28%;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .hero-first-content .first-content{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+   .hero-content{
+    height: auto;
+   }
+
+   .hero-first-content .first-content{
+    font-size: 14px;
+  }
+
+   .hero-content .main-btn .animated-button{
+    width: 100%;
+   }
+  .hero_section{
+    background: var(--hero-bg);
+  }
+
+}
+
+@media only screen and (max-width: 450px){
+  .hero-card-body .card-content p{
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .hero-card-body .card-content{
+    padding: 10px 15px;
+  }
+
+  .hero-first-content .first-content{
+    font-size: 13px;
+  }
+}
+

@@ -277,6 +277,12 @@ p {
   flex-shrink: 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-content {
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .container {
     max-width: 960px;
@@ -290,10 +296,6 @@ p {
 
   .hero-first-content .second-content p {
     font-size: 20px;
-  }
-
-  .hero-content {
-    height: auto;
   }
 }
 
@@ -448,20 +450,20 @@ p {
   overflow: hidden;
 }
 
-.text_With_img_section .imgbox{
+.text_With_img_section .imgbox {
   overflow: visible;
 }
-.collection_section .main-btn{
+.collection_section .main-btn {
   opacity: 0;
   visibility: hidden;
   transition: all linear 350ms;
 }
 
-.collection_section .collections:hover .main-btn{
+.collection_section .collections:hover .main-btn {
   opacity: 1;
   visibility: visible;
 }
-.collection_section .collections:hover .collection-content{
+.collection_section .collections:hover .collection-content {
   transform: translateY(0);
 }
 
@@ -576,7 +578,7 @@ p {
   gap: 12px;
 }
 
-.text_With_img_section .content ul li img{
+.text_With_img_section .content ul li img {
   max-width: 100%;
   width: 32px;
 }
@@ -616,10 +618,12 @@ p {
   width: 32px;
 }
 
-
-
 @media only screen and (max-width: 992px) {
-  .text_With_img_section .image{
+  .text_With_img_section {
+    padding-bottom: 50px;
+  }
+
+  .text_With_img_section .image {
     width: 100%;
   }
 
@@ -627,11 +631,11 @@ p {
     right: -4%;
   }
 
-  .text_With_img_section .content h2{
+  .text_With_img_section .content h2 {
     font-size: 43px;
   }
 
-  .text_With_img_section .imgbox{
+  .text_With_img_section .imgbox {
     overflow: hidden;
   }
 }
@@ -640,13 +644,13 @@ p {
   .buttons {
     flex-direction: column;
   }
-  .text_With_img_section .content h2{
+  .text_With_img_section .content h2 {
     font-size: 40px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .buttons{
+  .buttons {
     gap: 20px;
   }
   .text_With_img_section .content .animated-button {
@@ -659,25 +663,78 @@ p {
     justify-content: center;
   }
 
-  .text_With_img_section .content p{
+  .text_With_img_section .content p {
     font-size: 20px;
   }
 
-  .text_With_img_section .content h2{
+  .text_With_img_section .content h2 {
     font-size: 35px;
   }
 
-  .text_With_img_section .content ul{
+  .text_With_img_section .content ul {
     font-size: 16px;
+  }
+  .animated-button {
+    font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 430px) {
-  .text_With_img_section .content h2{
+  .text_With_img_section .content h2 {
     font-size: 32px;
   }
 
-  .text_With_img_section .content p{
+  .text_With_img_section .content p {
     font-size: 18px;
   }
+}
+
+/* text with image end  */
+
+/* best seller tab start */
+
+.seller_tab {
+  padding: 92px 0;
+}
+
+.seller_tab .heading {
+  text-align: center;
+}
+
+.seller_tab .heading h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: var(--heading-font);
+  line-height: 57px;
+}
+
+.seller_tab .heading p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.seller_tab .tabs {
+  padding: 50px 0;
+}
+
+.seller_tab .tabs h4 {
+  font-weight: 400;
+  transition: 0.5s all linear;
+}
+
+.seller_tab .image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 50%;
+  transition: 0.5s all linear;
+}
+
+.seller_tab .tabs .active .image {
+  opacity: 1;
+  border: black solid 1px;
+}
+
+.seller_tab .tabs .active h4 {
+  font-weight: 700;
 }

@@ -92,8 +92,8 @@ p {
 /* hero section start  */
 
 /* main button style  */
-/* From Uiverse.io by gharsh11032000 */
-.animated-button {
+
+.hero_section .animated-button {
   position: relative;
   display: flex;
   align-items: center;
@@ -442,3 +442,79 @@ p {
   }
 
 }
+
+/* infinity_slider end  */
+
+/* collection section  */
+
+
+
+.collection_section .animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 18px 74px;
+  font-size: 20px;
+  border: none;
+  background-color: #69d1d1;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin: 15px 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.collection_section .collection-content h2{
+  font-size: 34px;
+  font-family: var(--heading-font);
+  line-height: 44.1px;
+  font-weight: 700;
+}
+
+.collection_section .collection-content p{
+  font-size: 22px;
+}
+
+.collection_section .collections{
+  text-align: center;
+  position: relative;
+}
+
+
+
+.collection_section .collections .collection-content{
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 20px 0;
+  right: 5%;
+}
+
+
+
+.collection_section .collections:hover .collection_section .animated-button{
+  display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+  .collection_section .collection-content h2{
+    font-size: 26px;
+    font-family: var(--heading-font);
+
+  }
+  
+  .collection_section .collection-content p{
+    font-size: 16px;
+  }
+}
+
+/* collections section end  */
+
+
+
+

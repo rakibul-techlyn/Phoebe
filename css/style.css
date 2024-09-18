@@ -182,6 +182,10 @@ p {
   background-repeat: no-repeat;
 }
 
+.hero-image-mobile{
+  display: none;
+}
+
 .hero-first-content {
   color: white;
 }
@@ -260,9 +264,6 @@ p {
   font-weight: 700;
 }
 
-.hero-card-body .card-content .card-icon .image-box {
-  width: 12px;
-}
 
 .hero-card-body .card-content .card-icon p {
   font-size: 12px;
@@ -281,6 +282,20 @@ p {
   .hero-first-content .first-content{
     font-size: 15px;
   }
+  .hero-first-content .second-content h1{
+    font-size: 50px;
+  }
+
+  .hero-first-content .second-content p{
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 880px){
+  .hero-card-body .card-content .card-icon .yellow-star svg{
+    width: 60px;
+  }
 }
 @media only screen and (max-width: 500px) {
    .hero-content{
@@ -293,11 +308,31 @@ p {
 
    .hero-content .main-btn .animated-button{
     width: 100%;
+    padding: 18px 56px;
    }
   .hero_section{
     background: var(--hero-bg);
   }
 
+  .hero-first-content .second-content h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .hero-first-content .second-content p{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .hero-first-content{
+    text-align: center;
+  }
+
+  .hero-image-mobile{
+    display: block;
+  }
+
+  .hero-content{
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 450px){
@@ -312,6 +347,24 @@ p {
 
   .hero-first-content .first-content{
     font-size: 13px;
+  }
+
+  .hero-first-content .second-content h1{
+    font-size: 24px;
+  }
+  .hero-first-content .second-content p{
+    font-size: 15px;
+  }
+
+  .hero-card-body .card-content .card-icon .yellow-star svg{
+    width: 50px;
+  }
+
+  .hero-card-body .card-content .card-icon h5{
+    font-size: 11px;
+  }
+  .hero-card-body .card-content .card-icon p{
+    font-size: 10px;
   }
 }
 

@@ -393,6 +393,10 @@ p {
     transform: translateX(calc(-250px * 7));
   }
 }
+
+.infinity_slider{
+  padding: 20px 0;
+}
 .infinity_slider .slider {
   background: white;
   height: auto;

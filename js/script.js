@@ -59,7 +59,7 @@ var swiper = new Swiper(".products-tab", {
   breakpoints: {
     340: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     360: {
       slidesPerView: 2,
@@ -71,7 +71,7 @@ var swiper = new Swiper(".products-tab", {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
 
     840: {

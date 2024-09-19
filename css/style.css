@@ -720,6 +720,7 @@ p {
 .seller_tab .tabs h4 {
   font-weight: 400;
   transition: 0.5s all linear;
+  font-size: 18px;
 }
 
 .seller_tab .image {
@@ -730,6 +731,14 @@ p {
   transition: 0.5s all linear;
 }
 
+.seller_tab .tabs .tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
 .seller_tab .tabs .active .image {
   opacity: 1;
   border: black solid 1px;
@@ -738,3 +747,256 @@ p {
 .seller_tab .tabs .active h4 {
   font-weight: 700;
 }
+
+.seller_tab .animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 15px 54px;
+  font-size: 20px;
+  border: none;
+  background-color: #69d1d1;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.seller_tab .products-tab{
+  padding-bottom: 100px;
+}
+
+.seller_tab .products .product .main-btn {
+  transform: translateX(20%);
+  transition: all linear 0.5s;
+}
+
+.seller_tab .products .product {
+  width: 356px;
+  transition: all 350ms linear;
+}
+
+.seller_tab .products .product .product-content .review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.seller_tab .products .product .product-content .review .imgbox {
+  max-width: 88px;
+}
+
+.seller_tab .products .product .product-content {
+  text-align: center;
+}
+
+.seller_tab .products .product .product-content h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.seller_tab .products .product .product-content p {
+  font-size: 16px;
+  line-height: 22.4px;
+  margin-bottom: 15px;
+}
+
+.seller_tab .products .product .product-img {
+  position: relative;
+}
+
+.seller_tab .products .product .product-img .main-btn {
+  position: absolute;
+  bottom: 5%;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.seller_tab .products .product .product-img:hover .main-btn {
+  visibility: visible;
+  opacity: 1;
+}
+
+.seller_tab .products .product .product-img .offer {
+  background: red;
+  padding: 9px 12px;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  color: white;
+  font-size: 16px;
+}
+
+.seller_tab .bestSellerTab .swiper-button-next,
+.seller_tab .bestSellerTab .swiper-button-prev {
+  display: none;
+}
+.seller_tab .swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.seller_tab .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  top: 40%;
+  right: 0;
+  border: 1px solid black;
+  height: 30px;
+
+}
+.seller_tab .swiper-button-prev,
+.swiper-rtl .swiper-button-prev {
+  top: 40%;
+  left: 0;
+  border: 1px solid black;
+  height: 30px;
+
+}
+
+.seller_tab .price{
+  font-size: 24px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color:#D33737;
+}
+
+.seller_tab .price .before{
+  text-decoration: line-through;
+}
+
+.seller_tab .products-tab .swiper-button-next, .swiper-rtl .swiper-button-prev{
+  top: 96%;
+  right: 10%;
+  padding: 4px;
+}
+.seller_tab .products-tab .swiper-button-prev, .swiper-rtl .swiper-button-prev{
+  top: 96%;
+  left: 10%;
+  padding: 4px;
+}
+
+.seller_tab .products-tab .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{ 
+  top: 95%;
+  width: 70%;
+  left: 15%;
+  height: 3px;
+}
+
+.seller_tab .products-tab .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+   background-color:#69D1D1 ;
+}
+
+@media only screen and (min-width: 1700px) {
+  .seller_tab .animated-button {
+    padding: 15px 76px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .seller_tab .animated-button {
+    font-size: 16px;
+    padding: 15px 76px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .seller_tab .bestSellerTab .swiper-button-next,
+  .seller_tab .bestSellerTab .swiper-button-prev {
+    display: block;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .seller_tab .animated-button {
+    font-size: 16px;
+    padding: 15px 70px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .seller_tab .animated-button {
+    font-size: 16px;
+    padding: 10px 60px;
+  }
+
+  .seller_tab .products .product .product-content .review span{
+    font-size: 14px;
+  }
+
+  .seller_tab .products .product .product-content h3{
+    font-size: 16px;
+  }
+
+  .seller_tab .products .product .product-content p{
+    font-size: 15px;
+  }
+  .seller_tab .price{
+    font-size: 20px;
+  }
+
+  .seller_tab .products-tab .swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    width: 60%;
+  left: 20%;
+
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .seller_tab .animated-button {
+    font-size: 16px;
+    padding: 10px 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .seller_tab .animated-button {
+    font-size: 16px;
+    padding: 10px 65px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .seller_tab .animated-button {
+    font-size: 16px;
+    padding: 10px 55px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .seller_tab .animated-button {
+    width: 100%;
+  }
+  .seller_tab .products .product .product-img .main-btn {
+    font-size: 13px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+@media only screen and (max-width: 520px){
+  .seller_tab .products .product .product-content h3{
+    font-size: 15px;
+    margin: 8px 0;
+  }
+}
+
+@media only screen and (max-width: 440px){
+  .seller_tab .products .product .product-content h3{
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .seller_tab .products .product .product-content p{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .seller_tab .price{
+    font-size: 18px;
+  }
+}
+

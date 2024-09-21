@@ -93,4 +93,52 @@ var swiper = new Swiper(".products-tab", {
   },
 });
 
+var swiper = new Swiper(".special_product_slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: "",
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".special_product .products .swiper-pagination",
+    type: "progressbar",
+  },
+  breakpoints: {
+    340: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    360: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    840: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    950: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 28,
+    },
+  },
+});
+
 

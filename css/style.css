@@ -1636,4 +1636,13 @@ p {
   .special_product .products{
     padding: 40px 0;
   }
+
+  .special_product .products .product .product-img .circel img{
+    width: 40px;
+  }
+
+  .special_product .products .product .product-img .circel{
+    width: 90px;
+    height: 90px;
+  }
 }

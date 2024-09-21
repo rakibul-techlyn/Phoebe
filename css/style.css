@@ -109,6 +109,23 @@ p {
   }
 }
 
+/* swiper class  */
+.swiper-button-prev{
+  display: flex;
+  align-items: center;
+  background: #69D1D1;
+}
+.swiper-button-next{
+  display: flex;
+  align-items: center;
+  background: #69D1D1;
+}
+
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+  background: transparent;
+  opacity: 1;
+}
+
 /* common font name  */
 .heading-font {
   font-family: "Lusitana", system-ui;
@@ -355,17 +372,23 @@ p {
     font-size: 18px;
     margin-bottom: 20px;
   }
+
   .hero-first-content {
     text-align: center;
-  }
+    transform: translatey(-80px);
+}
 
   .hero-image-mobile {
     display: block;
   }
 
   .hero-content {
-    padding: 0 0 50px 0;
+    padding: 0 0 10px 0;
   }
+
+  .hero-content .card_wrapper {
+    transform: translatey(-65px);
+}
 }
 
 @media only screen and (max-width: 450px) {
@@ -642,6 +665,12 @@ p {
 
 .text_With_img_section .content .ship img {
   width: 32px;
+}
+
+@media only screen and (max-width: 1270px) {
+  .text_With_img_section .content .animated-button{
+    padding: 23px 23px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -1531,48 +1560,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  .seller_tab .bestSellerTab .swiper-button-next,
-  .seller_tab .bestSellerTab .swiper-button-prev {
-    display: block;
-  }
-}
-@media only screen and (max-width: 840px) {
-  .seller_tab .animated-button {
-    font-size: 16px;
-    padding: 15px 70px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .seller_tab .animated-button {
-    font-size: 16px;
-    padding: 10px 60px;
-  }
 
-  .seller_tab .products .product .product-content .review span {
-    font-size: 14px;
-  }
-
-  .seller_tab .products .product .product-content h3 {
-    font-size: 16px;
-  }
-
-  .seller_tab .products .product .product-content p {
-    font-size: 15px;
-  }
-  .seller_tab .price {
-    font-size: 20px;
-  }
-
-  .seller_tab .products-tab .swiper-horizontal > .swiper-pagination-progressbar,
-  .swiper-pagination-progressbar.swiper-pagination-horizontal,
-  .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
-  .swiper-vertical
-    > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
-    width: 60%;
-    left: 20%;
-  }
-}
 
 @media only screen and (max-width: 768px) {
   .special_product .heading h2 {
@@ -1611,21 +1599,11 @@ p {
     flex-direction: column;
     align-items: center;
   }
-  .seller_tab .products .product .product-img .main-btn {
-    font-size: 13px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    transform: translate(0, 0);
-  }
+
 }
 
 @media only screen and (max-width: 520px) {
-  .seller_tab .products .product .product-content h3 {
-    font-size: 22px;
-    margin: 8px 0;
-    font-weight: 700;
-  }
+
 
   .special_product
     .products
@@ -1885,7 +1863,7 @@ p {
   position: relative;
 }
 
-.testimonial_section::before{
+.testimonial_section::before {
   content: "";
   background-image: url("/image/text-image-bg.png");
   position: absolute;
@@ -1930,7 +1908,7 @@ p {
 }
 
 .testimonial_section .testimonial_slider {
-  padding:50px 0 100px 0;
+  padding: 50px 0 100px 0;
 }
 
 .testimonial_section .testimonial .testimonial-content {
@@ -2017,10 +1995,60 @@ p {
   background-color: #69d1d1;
 }
 
+@media only screen and (max-width: 992px) {
+  .testimonial_section .heading h2 {
+    font-size: 46px;
+  }
+  .join_family .heading p {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .testimonial_section .heading h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .testimonial_section .heading p {
+    font-size: 20px;
+    margin: 37px 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .testimonial_section .heading h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .testimonial_section .heading p {
+    font-size: 19px;
+    margin: 35px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .testimonial_section .heading h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .testimonial_section .heading p {
+    font-size: 19px;
+    margin: 12px 0;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .testimonial_section .heading h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .testimonial_section .heading p {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin: 10px 0;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .testimonial_section .swiper-button-next,
   .testimonial_section .swiper-button-prev {
-    display: block;
+    display: flex;
   }
 }
 
@@ -2087,11 +2115,6 @@ p {
 }
 
 @media only screen and (max-width: 520px) {
-  .seller_tab .products .product .product-content h3 {
-    font-size: 22px;
-    margin: 8px 0;
-    font-weight: 700;
-  }
 
   .special_product
     .products
@@ -2140,3 +2163,342 @@ p {
     height: 90px;
   }
 }
+
+/* testimonial section end  */
+
+.inspire_section {
+  background-image: url("/image/inspire-desktop.png");
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inspire_section .content {
+  max-width: 778px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inspire_section .content h2 {
+  font-size: 48px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 57px;
+}
+
+.inspire_section .content p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  margin: 39px 0;
+}
+
+.inspire_section .content .animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+  background-color: #69d1d1;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+  .inspire_section .content h2 {
+    font-size: 46px;
+  }
+  .inspire_section .content p {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .inspire_section .content h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .inspire_section .content p {
+    font-size: 20px;
+    margin: 37px 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .inspire_section .content h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .inspire_section .content p {
+    font-size: 19px;
+    margin: 35px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .inspire_section .content h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .inspire_section .content p {
+    font-size: 19px;
+    margin: 33px 0;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .inspire_section .content h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .inspire_section .content p {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin: 30px 0;
+  }
+}
+
+/* inspire section end  */
+
+/* Join section start  */
+
+.join_family {
+  padding: 90px 0 30px 0;
+}
+
+.join_family .image {
+  max-width: 100%;
+  width: 276px;
+}
+.join_family .heading {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.join_family .heading h2 {
+  font-size: 48px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 57px;
+}
+
+.join_family .heading a {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  margin: 39px 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .join_family .heading h2 {
+    font-size: 46px;
+  }
+  .join_family .heading a {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .join_family .heading h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .join_family .heading a {
+    font-size: 20px;
+    margin: 37px 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .join_family .heading h2 {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .join_family .heading a {
+    font-size: 19px;
+    margin: 35px 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .join_family .heading h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .join_family .heading a {
+    font-size: 19px;
+    margin: 33px 0;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .join_family .heading h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .join_family .heading a {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin: 30px 0;
+  }
+}
+
+/* subscribe form start  */
+.subscribe_section {
+  background-image: url("/image/subscribe-desktop.png");
+  width: 100%;
+  height: 609px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_section .content{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 630px;
+  text-align: center;
+}
+
+.subscribe_section .content p{
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+
+.subscribe_section .content .heading h2 {
+  font-size: 48px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 57px;
+}
+
+.subscribe_section .content .heading p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  margin: 34px 0;
+}
+
+.subscribe_section .content .animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+  background-color: #69d1d1;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  width: 33%;
+  height: 60px;
+}
+
+.subscribe_section .content form{
+  width: 100%;
+  display: flex;
+  gap: 2%;
+}
+
+.subscribe_section .content form .email{
+  width: 65%;
+  height: 60px;
+  padding: 25px;
+  font-size: 16px;
+  color: #44281ACC;
+}
+
+@media only screen and (max-width: 992px) {
+  .subscribe_section .content .heading h2 {
+    font-size: 46px;
+  }
+  .subscribe_section .content .heading p {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .subscribe_section .content .heading h2 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .subscribe_section .content .heading p {
+    font-size: 20px;
+    margin: 37px 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .subscribe_section .content .heading h2{
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .subscribe_section .content .heading p{
+    font-size: 19px;
+    margin: 35px 0;
+  }
+
+  .subscribe_section .content{
+    width: 100%;
+  }
+
+  .subscribe_section {
+    background-image: url("/image/subscribe-mobile.png");
+    width: 100%;
+    height: 876px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
+.subscribe_section .content form{
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscribe_section .content form .email{
+  width: 100%;
+}
+
+.subscribe_section .content .animated-button{
+  width: 100%;
+}
+
+}
+@media only screen and (max-width: 500px) {
+  .subscribe_section .content .heading h2{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .subscribe_section .content .heading p{
+    font-size: 19px;
+    margin: 33px 0;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .subscribe_section .content .heading {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .subscribe_section .content .heading p {
+    font-size: 18px;
+    line-height: 25.2px;
+    margin: 30px 0;
+  }
+}
+

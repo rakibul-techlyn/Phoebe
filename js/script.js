@@ -188,5 +188,32 @@ var swiper = new Swiper(".testimonial_slider", {
     },
   },
 });
+var swiper = new Swiper(".join_family_slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    360: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    840: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 28,
+    },
+    1300: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
+  },
+});
 
 
